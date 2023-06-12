@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    depends_on:
+      - db
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://db:27017/app
+  db:
+    image: mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./data:/data/db

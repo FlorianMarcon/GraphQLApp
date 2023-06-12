@@ -1,0 +1,35 @@
+# Dependency directories
+/node_modules
+
+# Build artifacts
+/dist
+
+# Environment variables
+.env
+
+# Docker
+.docker
+.dockerignore
+
+# Editor and IDE files
+.vscode
+.idea
+*.sublime-*
+*.swp
+*.swo
+*.bak
+*.tmproj
+
+# Logs
+logs
+*.log
+
+# Testing artifacts
+/coverage
+
+# Mac files
+.DS_Store
+
+# Temporary files
+*.tmp
+
